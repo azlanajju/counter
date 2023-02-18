@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 98vw;
+   height: 100vh;
+   align-items: center;
+   background: #1F1C4D
+}
+#display{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 250px;
+  color: white;
+}
+#count button{
+  color:white;
+  border: none;
+  font-size: 30px;
+  background: #9AF176;
+  color:white;
+  border-radius:25px ;
+  height: 80px;
+  width:150px;
+  font-weight: bold;
+}
+#reset button{
+  color:grey;
+  border: none;
+  padding:10px 20px;
+  border-radius: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+ 
+ <div id="reset"><button onclick="reset()"  >Reset</button></div>
+ <div id="display">0</div>
+ 
+ <div id="count"><button onclick="count()">Count</button></div>
+ 
+  <!-- Project -->
+  <script >
+    
+
+function count(){
+  var increment = 
+  document.getElementById('display').innerHTML;
+  var num = parseInt(increment);
+  document.getElementById('display').innerHTML=num+1;
+ 
+}
+function reset(){
+  document.getElementById('display').innerHTML="0";
+}
+
+  </script>
+</body>
+</html>
