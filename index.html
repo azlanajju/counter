@@ -102,7 +102,9 @@ function count(){
   document.getElementById('display').innerHTML;
   var num = parseInt(increment);
   document.getElementById('display').innerHTML=num+1;
- 
+  if(increment==1000){
+document.getElementById('display').style.font-size="200px";
+ }
 }
 function reset(){
   document.getElementById('display').innerHTML="0";
